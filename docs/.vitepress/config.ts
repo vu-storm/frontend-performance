@@ -14,17 +14,31 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Mạng & Tải trang',
+        text: 'Tổng quan',
+        items: [
+          { text: 'Page Weight & Load Time', link: '/general/page-weight' },
+          { text: 'Service Workers', link: '/general/service-workers' },
+          { text: 'Cookies', link: '/general/cookies' },
+        ],
+      },
+      {
+        text: 'Mạng',
         items: [
           { text: 'Nén dữ liệu (GZIP / Brotli)', link: '/network/compression' },
           { text: 'Giảm HTTP Requests', link: '/network/http-requests' },
+          { text: 'HTTP Cache Headers', link: '/network/http-cache' },
           { text: 'CDN', link: '/network/cdn' },
+          { text: 'TTFB', link: '/network/ttfb' },
+          { text: 'HTTPS, Protocol & 404', link: '/network/https' },
         ],
       },
       {
         text: 'Tối ưu Assets',
         items: [
           { text: 'Hình ảnh', link: '/assets/images' },
+          { text: 'CSS', link: '/assets/css' },
+          { text: 'JavaScript', link: '/assets/javascript' },
+          { text: 'HTML', link: '/assets/html' },
           { text: 'Fonts', link: '/assets/fonts' },
           { text: 'Bundle JS/CSS', link: '/assets/bundle' },
         ],
